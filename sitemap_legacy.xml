@@ -21,5 +21,11 @@
     <loc>https://yoy.group/projects</loc>
     <priority>0.7</priority>
   </url>
-
+  
+  <url>
+    <loc>https://yoy.group/Landing</loc>
+    <lastmod>2025-05-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
 </urlset>
