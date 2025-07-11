@@ -1,0 +1,15 @@
+# .github/workflows/indexnow.yml
+name: Notify IndexNow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ping-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify IndexNow
+        run: |
+          curl "https://www.bing.com/indexnow?url=https://yoy.group/landing&key=3b00e1b30db49d3e58ddf758eb795422"
