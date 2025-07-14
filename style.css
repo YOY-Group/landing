@@ -7,8 +7,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100dvh;
   text-align: center;
+  padding-top: 60px;
 }
 .logo {
   max-width: 120px;
