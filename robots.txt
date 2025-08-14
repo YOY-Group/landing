@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://yoy.group/sitemap.xml
-Sitemap: https://yoy.group/sitemap_legacy.xml
