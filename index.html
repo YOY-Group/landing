@@ -1,54 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- YOY Group identity links for SEO & verification -->
-<link rel="me" href="https://www.instagram.com/yoy.group/" />
-<link rel="me" href="https://x.com/yoygroup" />
-<link rel="me" href="https://uk.linkedin.com/company/yoygroup" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>YOY Group — Culture, Fashion, Tech</title>
   <meta name="description" content="YOY is a next-gen cultural intelligence engine reimagining retail, drops, and identity through AI, design and storytelling.">
   <meta name="robots" content="index, follow">
-  
-  <!-- Favicon -->
+  <link rel="canonical" href="https://yoy.group/">
+
+  <!-- Identity -->
+  <link rel="me" href="https://www.instagram.com/yoy.group/">
+  <link rel="me" href="https://x.com/yoygroup">
+  <link rel="me" href="https://uk.linkedin.com/company/yoygroup">
+
+  <!-- Icons -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#000000">
-  
-  <!-- Open Graph (SEO & Social Sharing) -->
+
+  <!-- Open Graph -->
   <meta property="og:title" content="YOY Group — Culture, Fashion, Tech">
   <meta property="og:description" content="YOY is reimagining how brands and drops connect with audiences in fashion, art, and automation.">
   <meta property="og:url" content="https://yoy.group">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://yoy.group/assets/og-image.jpg"> <!-- Replace with your image if available -->
+  <meta property="og:image" content="https://yoy.group/assets/og-image.jpg">
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- GSO: FAQ for direct answers -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What is YOY Group?","acceptedAnswer":{"@type":"Answer","text":"A London studio blending culture, fashion, and technology. We design brand systems and agentic automation that compound over time."}},
+    {"@type":"Question","name":"What does YOY do today?","acceptedAnswer":{"@type":"Answer","text":"Lean builds, consulting sprints, and culture-led experiments — focused on retail innovation and AI-powered commerce."}},
+    {"@type":"Question","name":"How do we work together?","acceptedAnswer":{"@type":"Answer","text":"Start with a scoped sprint via the Consulting page or join the private list for drops and collaborations."}}
+  ]}
+  </script>
+
+  <!-- Org entity -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"YOY Group",
+   "url":"https://yoy.group/","logo":"https://yoy.group/logo.svg",
+   "sameAs":["https://uk.linkedin.com/company/yoygroup"],
+   "address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"UK"}}
+  </script>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.svg" alt="YOY Logo" class="logo" />
-    <h1>YOY Group</h1>
-    <p>Commerce. Culture. Automation.</p>
-    <p>Launching soon.</p>
 
-    <!-- Tally Embed -->
-    <div style="max-width:600px;margin:0px auto;">
-      <iframe 
-        data-tally-src="https://tally.so/embed/npqypE?alignLeft=1&hideTitle=1&transparentBackground=1"
-        loading="lazy"
-        width="100%"
-        height="516"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        title="Join the Early Access Circle">
-      </iframe>
-    </div>
-  </div>
+  <!-- Sitewide nav (routes crawl equity) -->
+  <nav>
+    <a href="/">Home</a> ·
+    <a href="/projects/">Projects</a> ·
+    <a href="/consulting/">Consulting</a> ·
+    <a href="/brands/">Brands</a> ·
+    <a href="/contact/">Contact</a> ·
+    <a href="/about/">About</a>
+  </nav>
+
+  <main class="container">
+    <img src="/logo.svg" alt="YOY Group" class="logo">
+    <h1>YOY Group</h1>
+    <p><strong>Culture. Fashion. Tech.</strong></p>
+    <p>We weave myth and machine into living culture — rare, intimate, and impossible to imitate.</p>
+
+    <p>
+      <a href="/projects/">Projects</a> ·
+      <a href="/consulting/">Consulting</a> ·
+      <a href="/manifesto/">Manifesto</a>
+    </p>
+
+    <!-- Private list (conversion) -->
+    <section aria-label="Private list">
+      <p><em>Private list is open — occasional notes, case drops, and quiet invites.</em></p>
+      <div style="max-width:600px;margin:0 auto;">
+        <iframe
+          data-tally-src="https://tally.so/embed/npqypE?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy" width="100%" height="380" frameborder="0"
+          marginheight="0" marginwidth="0" title="Join the Private List">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <small><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></small>
+  </footer>
 
   <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
