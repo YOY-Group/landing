@@ -66,3 +66,20 @@ hr{ border:0; border-top:1px solid var(--line); max-width:720px; margin:40px aut
   box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
 }
 .pill:hover{ background:rgba(255,255,255,.06); opacity:1; }
+
+/* ----- Mobile polish for pills + spacing ----- */
+.pills{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:12px 0 6px; }
+.pill{ display:inline-block; padding:8px 14px; border-radius:9999px;
+       border:1px solid var(--line); background:rgba(255,255,255,.03);
+       box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+.pill:hover{ background:rgba(255,255,255,.06); opacity:1; }
+
+@media (max-width:640px){
+  /* give content a bit more space below the wrapped nav */
+  main{ margin-top:24px; }
+  .pill{ padding:10px 14px; font-size:14px; }
+}
+
+/* optional: make inline links look tappable without turning blue */
+a, a:visited{ border-bottom:1px solid transparent; }
+a:hover{ border-bottom-color: rgba(255,255,255,.25); }
