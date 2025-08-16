@@ -2,8 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yoy.group/</loc>
-    <lastmod>2025-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yoy.group/about/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://yoy.group/projects/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://yoy.group/consulting/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://yoy.group/brands/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://yoy.group/contact/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://yoy.group/manifesto/</loc>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>
