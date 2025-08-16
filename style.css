@@ -1,22 +1,54 @@
-body {
-  background: #000;
-  color: #fff;
-  font-family: helvetica;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100dvh;
-  text-align: center;
-  padding-top: 30px;
+/* ===== YOY.Group luxury/minimal UI ===== */
+:root{
+  --bg:#000; --fg:#fff; --muted:#bdbdbd; --line:rgba(255,255,255,.08);
 }
-.logo {
-  max-width: 120px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+
+*{ box-sizing:border-box; }
+
+html,body{
+  margin:0; padding:0;
+  background:var(--bg); color:var(--fg);
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Inter, system-ui, Helvetica, Arial, sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
 }
-.container {
-  max-width: 600px;
-  padding: 30px;
+
+/* links: no blue/purple anywhere */
+a, a:visited{ color:var(--fg) !important; text-decoration:none; }
+a:hover, a:focus{ opacity:.85; text-decoration:none; }
+a:focus-visible{ outline:1px dashed rgba(255,255,255,.5); outline-offset:2px; }
+
+/* layout */
+.container{ max-width:720px; margin:0 auto; padding:40px 20px; text-align:center; }
+.logo{ width:96px; height:auto; display:block; margin:28px auto 8px; }
+
+/* type */
+h1{ font-size:28px; font-weight:700; margin:8px 0 6px; letter-spacing:.02em; }
+p{ color:#e5e5e5; margin:8px 0; }
+
+/* sticky top nav */
+nav{
+  position:sticky; top:0; z-index:100;
+  display:flex; gap:20px; justify-content:center; align-items:center;
+  padding:14px 16px;
+  background:rgba(0,0,0,.55); backdrop-filter:saturate(120%) blur(6px);
+  border-bottom:1px solid var(--line);
+}
+nav a{ font-size:14px; letter-spacing:.04em; opacity:.9; }
+nav a:hover{ opacity:1; }
+
+/* spacing below nav */
+main{ margin-top:16px; }
+
+/* footer */
+footer{ margin:60px 0 20px; text-align:center; opacity:.75; }
+footer a{ color:var(--fg) !important; }
+
+/* mobile */
+@media (max-width:640px){
+  nav{ gap:12px; padding:12px 10px; flex-wrap:wrap; }
+  nav a{ font-size:13px; }
+  .logo{ width:80px; margin-top:18px; }
+  h1{ font-size:22px; }
+  .container{ padding:24px 16px; }
 }
