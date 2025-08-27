@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /n8n/
+Disallow: /dev/
 Allow: /
 
 Sitemap: https://yoy.group/sitemap.xml
