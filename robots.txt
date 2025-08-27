@@ -3,6 +3,7 @@ Disallow: /n8n/
 Disallow: /dev/
 Disallow: /ai/
 Disallow: /studio/
+Disallow: /api/
 Allow: /
 
 Sitemap: https://yoy.group/sitemap.xml
