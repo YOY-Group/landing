@@ -1,9 +1,4 @@
 User-agent: *
-Disallow: /n8n/
-Disallow: /dev/
-Disallow: /ai/
-Disallow: /studio/
-Disallow: /api/
-Allow: /
+Disallow: /
 
-Sitemap: https://yoy.group/sitemap.xml
+# Legacy site – intentionally blocked from indexing
